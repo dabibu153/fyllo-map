@@ -19,9 +19,11 @@ const dispatch = useDispatch()
   }, [])
 
   const handleListItems=(x,y)=>{
+    dispatch({type:"SET_LOAD",data:"lv"});
     Axios.get(`https://api.agrihawk.in/api/plots/getLatestDataForMap?plotId=${x}&access_token=EFxkmrvH1zoctRpH7Q3X5nZhOSIj5E6lmM2wrdF4PJtOJnOdOztfQcatpBux4vck`).then(res=>{
       dispatch({type:"SET_DETAILED_DATA",data:res.data})
       dispatch({type: "SET_PLOT", data:y})
+      dispatch({type:"SET_LOAD",data:"liv"});
               })
   }
 

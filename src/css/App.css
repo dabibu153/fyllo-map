@@ -1,7 +1,7 @@
 .App {
   height: 100vh;
   display: grid;
-  grid-template-rows: 80% 20%;
+  grid-template-rows: 70% 30%;
   overflow: hidden;
 }
 
@@ -92,5 +92,20 @@
 .detailHeader {
   font-size: 25px;
   margin: 10px;
+  font-weight: 700;
+}
+
+.showBoxTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.liv {
+  display: none;
+}
+.lv {
+  margin: 10px;
+  font-size: 25px;
   font-weight: 700;
 }
